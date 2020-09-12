@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for employees</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='left'>
+        <i class="fas fa-rocket"></i>
+        <h1>Welcome</h1>
+        <p>You are 30 seconds away from earning your own money!</p>
+        <button id='login'>Login</button>
+    </div>
+
+    <div class='right'>
+        <div class='employee-hirer'><!-- slider -->
+            <button>Employee</button>
+            <button>Hirer</button>
+        </div>
+        <h1>Apply as an Employee</h1>
+        <div id='form-fields'> <!-- left form fields -->
+            <div id='left-forms'>
+                <input type="text" id='first-name' placeholder="First name *">
+                <input type="text" id='last-name' placeholder="Last name *">
+                <input type="text" id='password' placeholder="Password *">
+                <input type="text" id='confirm' placeholder="Confirm password *">
+                <input type="radio" id='first-name'> <label for="">Male</label>
+                <input type="radio" id='first-name'> <label for="">Female</label>
+            </div>
+            <div id='right-forms'><!-- right form fields -->
+                <input type="text" id='email' placeholder="Email *">
+                <input type="text" id='phone' placeholder="Phone number *">
+                <select name="security" id="security">
+                    <option value="please-select">Please select your security question</option>
+                    <option value="dogs-name">Whats your dogs name</option>
+                    <option value="maiden-name">Mothers maiden name</option>
+                </select>
+                <input type="text" id='answer' placeholder="Enter your answer *">
+                <button>Register</button>
+            </div>
+        </div>
+
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
