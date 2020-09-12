@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(to right, #6a11cb 0%, #25bffc 100%);
+    background-image: linear-gradient(to right, #5211cb 0%, #25bffc 100%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100vh;
     display: flex;
@@ -19,7 +19,7 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    margin:30px;
     justify-content: center;
     align-items: center;
 }
@@ -27,27 +27,96 @@ body{
 .left h1{
     margin-top:10px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .left p{
     text-align:center;
-    font-size: 10px;
+    font-size: 17px;
+    padding: 0 30px;
 }
 
 .left button{
     border: none;
     font-weight: bold;
-    color: gray;
+    color: black;
     padding: 5px 28px;
     border-radius: 15px;
     margin: 80px 25px;
 }
 
 .fa-rocket{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .right{
-    background-color: white;
+    height: 80vh;
+    flex: 2;
+    background-color: whitesmoke;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius:150px;
+    padding: 60px;
+    margin-right: 40px;
+}
+
+.right h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#form-fields{
+    /* height: 30vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px rgb(201, 199, 199) solid;
+    margin-top: 15px;
+    width: 220px;
+}
+
+#register{
+    background-color:#2300a1;
+    color: white;
+    padding: 6px 30px;
+    font-size: 13px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    left: 75%;
+    top: 70%;
+}
+
+.employee-hirer{
+    background-color: #2300a1;
+    width: 32%;
+    border-radius: 30px;
+    position: relative;
+    left: 77%;
+    margin-bottom: 20px;
+}
+
+.employee-hirer button{
+    color: #2300a1;
+    background-color: whitesmoke;
+    padding: 3px 7px;
+    border-radius: 15px;
+    border: none;
+    margin: 2px;
+    font-weight: bold;
+}
+
+#hirer{
+    color: white;
+    background-color: #2300a1;
+    margin-left: 15px;
+}
+
+.gender{
+    margin-top:15px;
 }
